@@ -3,7 +3,7 @@
 $maj-font:"Oswald"
 
 :root{
-    font-size: 20px}
+    font-size: 20px;}
     
 body, html{
     font-family: "Montserrat", sans-serif;
@@ -14,51 +14,42 @@ body, html{
     color:black;
 }
 
-    /*Header*/
-body > header {
-    background: #000 url("../imgs/orelheader.jpg") no-repeat center top;
-background-size: cover;
-height: 500px;
-display: flex;
-justify-content:  flex-end;
-align-items: flex-end;
-
-    & > nav {
-        align-content: flex-end;
-         ul{list-style-type: none;
-            display: flex;
-            margin-bottom:10px;
-            margin-right: 70px;
-            >li
     
-             a {
-                padding:10px 20px 30px;
-                margin:30px 30px 20px 30px;    
-                font-weight: bold;
-                text-decoration: none;
-                color:white}
-            
-        }
-    }
-}
+//body
 
-/*Body*/
-body{display: flex;
-    align-items: center;
-    flex-direction: column;
+body{
+   display:flex;
+   flex-direction:column;
+   align-items:center; 
+   h1 {font-family: ($maj-font);
 }
 main {
-    width:980px;
-        h1 {font-family: ($maj-font);}
+    width:100%;
+    max-width:980px;
+    }
 }
-aside{
+.bio {
     background: rgb(145, 28, 28);
+    padding: 20px;
 }
 .second{ 
 display: flex;
 flex-direction: row;
+    > article {
+        flex-grow:2;
+    }
+}
 
-> article {
-    flex-grow:2
-}
-}
+//FOOTER
+footer{
+display: flex;
+justify-content: space-around;
+background:black url(../imgs/footer.jpg);
+width:100%;
+max-width: 1440px;
+color:white;
+    section{
+
+    }}
+
+@import "_header.scss"
