@@ -5,11 +5,7 @@
 
 body, html {
   font-family: "Montserrat", sans-serif;
-}
-
-.active {
-  background-color: white;
-  color: black;
+  font-size: 1rem;
 }
 
 body {
@@ -27,6 +23,8 @@ body {
 
 body h1 {
   font-family: "Oswald";
+  font-size: 3rem;
+  text-align: center;
 }
 
 body main {
@@ -34,12 +32,7 @@ body main {
   max-width: 980px;
 }
 
-.bio {
-  background: #911c1c;
-  padding: 20px;
-}
-
-.second {
+body main .second {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -49,22 +42,79 @@ body main {
           flex-direction: row;
 }
 
-.second > article {
+body main .second > article {
   -webkit-box-flex: 2;
       -ms-flex-positive: 2;
           flex-grow: 2;
 }
 
-footer {
+body main .second > article a {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  border: 1px solid #911c1c;
+  padding: 5px;
+  text-decoration: none;
+  color: #911c1c;
+  font-weight: bold;
+}
+
+body main .second .bio {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  background: black url(../imgs/footer.jpg);
-  width: 100%;
-  max-width: 1440px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background: #911c1c;
+  padding: 20px;
+  font-weight: bold;
+}
+
+body main .second .bio h1 {
   color: white;
+}
+
+body main .second .bio img {
+  -webkit-box-ordinal-group: 0;
+      -ms-flex-order: -1;
+          order: -1;
+}
+
+body main .second .bio span {
+  color: white;
+  font-size: 1em;
+}
+
+body main .second .bio p {
+  font-size: 1em;
+}
+
+body main .third {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+body main .third > figure > img {
+  max-width: 175px;
+  margin: 2px;
+}
+
+body main .third > p {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+/*BODY ALBUMS*/
+.main_albums section > img {
+  float: left;
 }
 
 /*Header*/
@@ -101,10 +151,62 @@ body > header > nav ul {
 
 body > header > nav ul > li
 a {
-  padding: 10px 20px 30px;
-  margin: 30px 30px 20px 30px;
+  padding: 10px 40px 10px;
+  margin: 30px 40px 20px 40px;
   font-weight: bold;
   text-decoration: none;
   color: white;
+}
+
+.active {
+  background-color: white;
+  color: black;
+}
+
+a:hover {
+  background-color: rgba(145, 28, 28, 0.7);
+}
+
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  background: black url(../imgs/footer.jpg);
+  width: 100%;
+  max-width: 1440px;
+}
+
+footer > section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  color: white;
+  text-align: center;
+}
+
+footer > section ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+footer > section ul li a {
+  color: inherit;
+  text-decoration: none;
+}
+
+footer > section ol {
+  list-style-type: none;
+}
+
+footer > section h1 {
+  font-size: 1em;
+  font-weight: inherit;
 }
 /*# sourceMappingURL=accueil.css.map */

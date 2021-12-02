@@ -9,22 +9,28 @@ display: flex;
 justify-content:  flex-end;
 align-items: flex-end;
 
-
-    & > nav {
-        align-content: flex-end;
-         ul{list-style-type: none;
-            display: flex;
-            margin-bottom:10px;
-            margin-right: 70px;
-            >li
-    
-             a {
-                padding:10px 20px 30px;
-                margin:30px 30px 20px 30px;    
-                font-weight: bold;
-                text-decoration: none;
-                color:white}
+& > nav {
+    align-content: flex-end;
+    ul{list-style-type: none;
+        display: flex;
+        margin-bottom:10px;
+        margin-right: 70px;
+        >li
+        
+        a {
+            padding:10px 40px 10px;
+            margin:30px 40px 20px 40px;    
+            font-weight: bold;
+            text-decoration: none;
+            color:white}
             
         }
     }
+}
+
+.active {
+    background-color: white;
+    color:black;
+}
+a:hover{background-color: rgba(145, 28, 28, 0.7);
 }

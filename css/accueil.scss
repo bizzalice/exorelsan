@@ -2,54 +2,82 @@
 
 $maj-font:"Oswald"
 
-:root{
-    font-size: 20px;}
+:root{font-size: 20px;}
     
 body, html{
     font-family: "Montserrat", sans-serif;
+    font-size: 1rem;
 }
 
-.active {
-    background-color: white;
-    color:black;
-}
+
 
     
-//body
+//BODY ACCUEIL
 
 body{
    display:flex;
    flex-direction:column;
    align-items:center; 
    h1 {font-family: ($maj-font);
+    font-size: 3rem;
+    text-align: center;
 }
 main {
     width:100%;
     max-width:980px;
-    }
-}
-.bio {
-    background: rgb(145, 28, 28);
-    padding: 20px;
-}
-.second{ 
-display: flex;
-flex-direction: row;
-    > article {
-        flex-grow:2;
-    }
-}
+    .second{ 
+    display: flex;
+    flex-direction: row;
+        > article {
+            flex-grow:2;
+            a {list-style-type:none;
+                  padding: 0;
+                    margin:0;
+                   border: 1px solid rgb(145, 28, 28);
+                    padding:5px;
+                    text-decoration:none;
+                            color:rgb(145, 28, 28);
+                            font-weight: bold;
+                            
+                    }}
+        .bio {
+            display: flex;
+            flex-direction: column;
+            background: rgb(145, 28, 28);
+            padding: 20px;
+            font-weight:bold;
 
-//FOOTER
-footer{
-display: flex;
-justify-content: space-around;
-background:black url(../imgs/footer.jpg);
-width:100%;
-max-width: 1440px;
-color:white;
-    section{
+            h1{
+                color: white;
+            }
+            img{
+                order:-1
+            }
+            span {
+
+                color:white;
+            font-size:1em;}
+            p {font-size:1em;}
+        }}
+.third {display: flex;
+    flex-direction: column;
+    > figure> img {
+    max-width: 175px;
+margin:2px;}
+>p {align-self: center;}
+
 
     }}
+}
 
-@import "_header.scss"
+/*BODY ALBUMS*/
+.main_albums{
+    section> img {float:left
+    }
+}
+
+
+
+@import "_header.scss";
+
+@import "_footer.scss";
