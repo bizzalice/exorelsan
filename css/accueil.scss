@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&family=Oswald:wght@500&display=swap%27');
 
-$maj-font:"Oswald"
+$maj-font:"Oswald";
 
-:root{font-size: 20px;}
-    
+:root{font-size: 20px;}    
+
 body, html{
     font-family: "Montserrat", sans-serif;
     font-size: 1rem;
@@ -71,10 +71,28 @@ margin:2px;}
 }
 
 /*BODY ALBUMS*/
-.main_albums{
-    section> img {float:left
-    }
+.main_albums{display: flex;
+    flex-direction: column;
+    section 
+        img {float:left;
+    margin:30px 40px 40px 0;}
+    h1{justify-content: flex-start;}
 }
+
+/*BODY RESERVATION*/
+.main_rsvt{
+    display: flex;
+    flex-direction:column;
+    .dates_contact{display: flex; flex-direction: column;
+        margin-top:70px;
+        h1 {text-align:center;}
+        div { display: flex; flex-direction: row; 
+aside {
+h1 {margin:0px;
+}}}}
+
+}
+
 
 
 

@@ -113,8 +113,66 @@ body main .third > p {
 }
 
 /*BODY ALBUMS*/
-.main_albums section > img {
+.main_albums {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.main_albums section
+img {
   float: left;
+  margin: 30px 40px 40px 0;
+}
+
+.main_albums h1 {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+/*BODY RESERVATION*/
+.main_rsvt {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.main_rsvt .dates_contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 70px;
+}
+
+.main_rsvt .dates_contact h1 {
+  text-align: center;
+}
+
+.main_rsvt .dates_contact div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.main_rsvt .dates_contact div aside h1 {
+  margin: 0px;
 }
 
 /*Header*/
@@ -158,13 +216,14 @@ a {
   color: white;
 }
 
+body > header > nav ul a:hover {
+  background-color: rgba(145, 28, 28, 0.7);
+  color: white;
+}
+
 .active {
   background-color: white;
   color: black;
-}
-
-a:hover {
-  background-color: rgba(145, 28, 28, 0.7);
 }
 
 footer {
@@ -194,6 +253,7 @@ footer > section {
 footer > section ul {
   list-style-type: none;
   padding: 0;
+  margin: 0;
 }
 
 footer > section ul li a {
@@ -202,7 +262,9 @@ footer > section ul li a {
 }
 
 footer > section ol {
-  list-style-type: none;
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 footer > section h1 {
