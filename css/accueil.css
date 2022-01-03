@@ -171,8 +171,90 @@ img {
           flex-direction: row;
 }
 
+.main_rsvt .dates_contact div table {
+  margin: 5px 30px;
+}
+
+.main_rsvt .dates_contact div table th {
+  font-weight: bold;
+  text-align: left;
+  padding: 5px 10px;
+}
+
+.main_rsvt .dates_contact div table td {
+  border: 5px;
+  text-align: left;
+  padding: 5px 10px;
+}
+
+.main_rsvt .dates_contact div table a {
+  border: 1px solid #911c1c;
+  padding: 5px 10px;
+  text-decoration: none;
+  color: #911c1c;
+  font-weight: bold;
+}
+
 .main_rsvt .dates_contact div aside h1 {
   margin: 0px;
+  font-size: 30px;
+  text-align: left;
+}
+
+.main_rsvt .dates_contact div aside ul {
+  list-style-type: none;
+  padding: 0px;
+}
+
+.main_rsvt .dates_contact div aside ul a {
+  text-decoration: none;
+  color: black;
+  text-align: left;
+}
+
+.main_rsvt .reservation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.main_rsvt .reservation section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 20px;
+}
+
+.main_rsvt .reservation section h2 {
+  color: #911c1c;
+  text-transform: uppercase;
+}
+
+.main_rsvt .reservation section span {
+  margin: 10px;
+}
+
+.main_rsvt .reservation section span input, .main_rsvt .reservation section span select {
+  border: 1px solid #cfcfcf;
+  padding: 5px;
+}
+
+.main_rsvt .reservation section span > .button_annuler, .main_rsvt .reservation section span .button_commander {
+  text-decoration: none;
+  padding: 5px 10px;
+  border: 1px solid #911c1c;
+  color: #911c1c;
+  background-color: transparent;
+  font-size: 1rem;
+  font-weight: bold;
+  font-family: "Montserrat";
 }
 
 /*Header*/

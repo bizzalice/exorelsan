@@ -37,39 +37,39 @@
             <th scope="col">Date</th>
             <th scope="col">Ville</th>
             <th scope="col">Disponibilités</th>
-            <th scope="col">Réservations</th>
+            <th scope="col">Réservation</th>
         </tr>
         <tr>
-            <td>21 janvier 2018</td>
+            <td> <span>21 janvier 2018 </span></td>
             <td>Paris</td>
             <td>Oui</td>
             <td><a href="#">Tickets</a></td>
         </tr>
         <tr>
-            <td>25 janvier 2018</td>
+            <td> <span>25 janvier 2018</span></td>
             <td>Bruxelles</td>
             <td>Oui</td>
             <td><a href="#">Tickets</a></td>    
         </tr>
         <tr> 
-            <td>8 février 2018</td>
+            <td><span> 8 février 2018 </span></td>
              <td>Lille</td>
              <td>Non</td>
             <td><a href="#">Tickets</a></td>   
         </tr>
-        <tr><td>9 février 2018</td>
+        <tr><td> <span>9 février 2018</span></td>
             <td>Caen</td>
             <td>Oui</td>
            <td><a href="#">Tickets</a></td>  
         </tr>
         <tr>
-            <td>12 février 2018</td>
+            <td><span>12 février 2018</span></td>
              <td>Marseille</td>
              <td>Oui</td>
             <td><a href="#">Tickets</a></td>  
         </tr>
         <tr>
-            <td>14 février 2018</td>
+            <td> <span>14 février 2018</span></td>
              <td>Toulouse</td>
              <td>Oui</td>
             <td><a href="#">Tickets</a></td>  
@@ -81,20 +81,21 @@
 
 <!--FORMULAIRE-->
 
-   <section> 
-       <h1>RÉSERVATION</h1>
-   <form action="#" method=post>
-<h2>Coordonnées</h2>
-    <label for="nom_fld">Nom</label>
-    <input type="text" name="nom_fld" id="nom_fld">
-        <label for="prenom_fld">Prénom</label>
-        <input type="text" name="prenom_fld" id="prenom_fld">
-            <label for="email_fld">E-mail</label>
-            <input type="email" placeholder="me@domaine.be" name="email_fld" id="email_fld">
-                <label for="tel_fld">Téléphone</label>
-                <input type="tel" name="tel_fld" id="tel_fld">
-<h2>Votre ticket</h2>
-    <label for="ville_slct">Ville</label>
+   <section class=reservation> 
+  <div> <h1>RÉSERVATION</h1>
+  <form action="#" method=post>
+<section><h2>Coordonnées</h2>
+   <span><label for="nom_fld">Nom</label>
+    <input type="text" name="nom_fld" id="nom_fld"> </span>
+    <span><label for="prenom_fld">Prénom</label>
+        <input type="text" name="prenom_fld" id="prenom_fld"> </span>
+          <span><label for="email_fld">E-mail</label>
+            <input type="email" placeholder="me@domaine.be" name="email_fld" id="email_fld"></span>
+                <span><label for="tel_fld">Téléphone</label>
+                <input type="tel" name="tel_fld" id="tel_fld"></span>
+                </section>
+<section><h2>Votre ticket</h2>
+   <span><label for="ville_slct">Ville</label>
     <select name="ville" id="ville_slct">
         <option value="paris">Paris</option>
         <option value="bruxelles">Bruxelles</option>
@@ -102,20 +103,22 @@
         <option value="caen">Caen</option>
         <option value="marseille">Marseille</option>
         <option value="toulouse">Toulouse</option>
-    </select>
-            <label for="date_fld">Date du concert</label>
-            <input type="date" name="date_fld" id="date_fld">
-                <label for="ticket_fld">Nombre de ticket</label>
-                <input type="number" id="ticket_fld"    name="ticket_fld">
-<h2>Créer un compte</h2>
-    <label for="username">Login</label>
-    <input type="texte" id="username" name="name" required>
-        <label for="password_fld">Mot de passe</label>
-        <input type="password" name="password_fld" name="password_fld" required>
+    </select> </span>
+           <span><label for="date_fld">Date du concert</label>
+            <input type="date" name="date_fld" id="date_fld"> </span>
+             <span> <label for="ticket_fld">Nombre de ticket</label>
+                <input type="number" id="ticket_fld"    name="ticket_fld"> </span>
+             </section>
+<section><h2>Créer un compte</h2>
+    <span><label for="username">Login</label>
+    <input type="texte" id="username" name="name" required> </span>
+        <span><label for="password_fld">Mot de passe</label>
+        <input type="password" name="password_fld" name="password_fld" required> </span>
 
-        <a href="reservation.html">Annuler</a>
-        <button type="submit">Commander</button>
-   </form> 
+        <span><a href="reservation.html" class=button_annuler>Annuler</a>
+        <button type="submit" class=button_commander>Commander</button> </span>
+        </section>
+   </form> </div>
 </section>
 </main>
 

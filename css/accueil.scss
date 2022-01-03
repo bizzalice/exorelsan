@@ -87,12 +87,55 @@ margin:2px;}
         margin-top:70px;
         h1 {text-align:center;}
         div { display: flex; flex-direction: row; 
+            table {margin: 5px 30px;
+                
+                th{font-weight: bold;
+                text-align:left;
+            padding: 5px 10px}
+                td {border: 5px; 
+                    text-align: left ;
+            padding: 5px 10px;}}
+            table a {border: 1px solid rgb(145, 28, 28);
+            padding: 5px 10px;
+        text-decoration: none;
+    color:rgb(145, 28, 28);
+font-weight: bold;}
 aside {
 h1 {margin:0px;
-}}}}
-
+    font-size: 30px;
+    text-align: left;}
+ ul {
+     list-style-type: none;
+     padding: 0px;
+     a {text-decoration: none;
+color: black;
+text-align: left; }}
+}
+}}
+.reservation{display: flex;
+    justify-content: center;
+    
+section {display: flex;
+    flex-direction: column;
+    margin: 20px;
+    h2 {color:rgb(145, 28, 28);
+text-transform: uppercase;}
+span {
+    margin: 10px;
+    input, select {border: 1px solid rgb(207, 207, 207);
+    padding: 5px;} 
+> .button_annuler, .button_commander {
+    text-decoration: none;
+    padding: 5px 10px; 
+    border:1px solid rgb(145, 28, 28);
+color:rgb(145, 28, 28);
+background-color: transparent;
+font-size: 1rem;
+font-weight: bold;
+font-family: "Montserrat";}}
 }
 
+ }}
 
 
 
